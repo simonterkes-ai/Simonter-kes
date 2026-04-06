@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simonterkes Dashboard</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: url('https://images.unsplash.com/photo-1580281657527-47b6f8b9c6b3') no-repeat center/cover;
+      background: url('https://drive.google.com/uc?export=view&id=1M_LSVPn1tscOffeG6I6wZfmd3qbBlO5q') no-repeat center/cover;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -20,37 +20,35 @@
 
     .overlay {
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.4);
+      background: rgba(0,0,0,0.5);
+      top: 0;
+      left: 0;
     }
 
     .container {
       position: relative;
+      z-index: 1;
       width: 100%;
       max-width: 420px;
       text-align: center;
       padding: 20px;
-      z-index: 1;
     }
 
     .logo {
-      width: 80px;
+      width: 90px;
       margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 22px;
+      color: white;
       margin: 10px 0;
-      color: #ffffff;
     }
 
     p {
-      margin: 0 0 25px;
       color: #e2e8f0;
-      font-size: 14px;
+      margin-bottom: 25px;
     }
 
     .card {
@@ -59,32 +57,21 @@
       padding: 18px;
       margin-bottom: 15px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      font-weight: 500;
+      align-items: center;
       cursor: pointer;
+      transition: 0.2s;
       box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-      transition: all 0.2s ease;
     }
 
     .card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
     }
 
     .left {
       display: flex;
-      align-items: center;
       gap: 10px;
-    }
-
-    .icon {
-      font-size: 18px;
-    }
-
-    .arrow {
-      font-size: 18px;
-      color: #94a3b8;
+      align-items: center;
     }
 
     a {
@@ -93,41 +80,37 @@
     }
 
     .footer {
-      margin-top: 20px;
-      font-size: 12px;
       color: #e2e8f0;
+      font-size: 12px;
+      margin-top: 15px;
     }
   </style>
 </head>
+
 <body>
 
 <div class="overlay"></div>
 
 <div class="container">
 
-  <!-- GANTI LOGO DI SINI -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Coat_of_arms_of_Indonesia_Garuda_Pancasila.svg/1200px-Coat_of_arms_of_Indonesia_Garuda_Pancasila.svg.png" class="logo" alt="Logo">
+  <!-- LOGO -->
+  <img src="https://drive.google.com/uc?export=view&id=1bkhGTcA-UsoUptzIZNNNqkFEEurXqytG" class="logo">
 
   <h1>Dinas Kesehatan Kab. Sigi</h1>
   <p>Sistem Monitoring & Perencanaan (Simonterkes)</p>
 
+  <!-- MENU -->
   <a href="https://docs.google.com/spreadsheets/d/1uAvLcHHPIEE90eYo2Glb-yQfopp88z4euRZwfoH2lP8/edit?gid=1595741466" target="_blank">
     <div class="card">
-      <div class="left">
-        <span class="icon">📊</span>
-        <span>Rekap Monev</span>
-      </div>
-      <span class="arrow">→</span>
+      <div class="left">📊 Rekap Monev</div>
+      <div>→</div>
     </div>
   </a>
 
   <a href="https://script.google.com/macros/s/AKfycbzqD-6nsYvFkz5htZ76xPcS8HQ9ULeVLS5bYWhEjgKKTVhyaJcIeGlYzw0zrXId4fbUIA/exec" target="_blank">
     <div class="card">
-      <div class="left">
-        <span class="icon">🌐</span>
-        <span>Dashboard Arsip Data</span>
-      </div>
-      <span class="arrow">→</span>
+      <div class="left">🌐 Dashboard Arsip Data</div>
+      <div>→</div>
     </div>
   </a>
 
