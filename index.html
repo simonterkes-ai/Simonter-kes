@@ -36,9 +36,18 @@
       padding: 20px;
     }
 
-    .logo {
-      width: 80px;
+    /* LOGO */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
       margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 65px;
+      background: white;
+      padding: 6px;
       border-radius: 10px;
     }
 
@@ -91,7 +100,11 @@
 
 <div class="container">
 
-  <img src="logo.png" class="logo">
+  <!-- LOGO SIGI + KEMENKES SAJA -->
+  <div class="logo-container">
+    <img src="logo-sigi.png" class="logo">
+    <img src="logo-kemenkes.png" class="logo">
+  </div>
 
   <h1>Dinas Kesehatan Kab. Sigi</h1>
   <p>Sistem Monitoring & Perencanaan (Simonterkes)</p>
