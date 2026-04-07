@@ -11,7 +11,8 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: url('bg.jpg') no-repeat center center/cover;
+      background: url('bg.jpg') no-repeat center center;
+      background-size: cover;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -19,10 +20,10 @@
     }
 
     .overlay {
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.55);
+      background: rgba(0,0,0,0.6);
       top: 0;
       left: 0;
     }
@@ -40,8 +41,9 @@
     .logo-container {
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 15px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .logo {
@@ -72,7 +74,7 @@
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
-      transition: 0.25s;
+      transition: 0.3s;
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
       font-weight: 500;
     }
@@ -100,18 +102,18 @@
 
 <div class="container">
 
-  <!-- LOGO SIGI + KEMENKES SAJA -->
+  <!-- LOGO -->
   <div class="logo-container">
     <img src="logo-sigi.png" class="logo">
     <img src="logo-kemenkes.png" class="logo">
   </div>
 
   <h1>Dinas Kesehatan Kab. Sigi</h1>
-  <p>Sistem Monitoring & Perencanaan (Simonterkes)</p>
+  <p>Sistem Monitoring & Perencanaan Kesehatan (Simonterkes)</p>
 
   <a href="https://docs.google.com/spreadsheets/d/1uAvLcHHPIEE90eYo2Glb-yQfopp88z4euRZwfoH2lP8/edit?gid=1595741466" target="_blank">
     <div class="card">
-      📊 Rekap Monev
+      📊 Rekap Monitoring & Evaluasi
       <span>→</span>
     </div>
   </a>
@@ -124,7 +126,7 @@
   </a>
 
   <div class="footer">
-    © Dinas Kesehatan Kab. Sigi
+    © Dinas Kesehatan Kabupaten Sigi
   </div>
 
 </div>
