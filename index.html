@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>SIMONTERKES</title>
 
   <!-- FONT -->
@@ -23,9 +24,11 @@
       background:url('bg.jpg') no-repeat center center;
       background-size:cover;
       min-height:100vh;
+
       display:flex;
       justify-content:center;
       align-items:center;
+
       position:relative;
       overflow:hidden;
     }
@@ -34,31 +37,16 @@
     .overlay{
       position:fixed;
       inset:0;
-      background:
-        linear-gradient(
-          rgba(6, 22, 34, 0.75),
-          rgba(6, 22, 34, 0.85)
-        );
-      backdrop-filter:blur(3px);
+      background:rgba(0,0,0,0.58);
     }
 
-    /* MAIN CONTAINER */
+    /* CONTAINER */
     .container{
       position:relative;
       z-index:2;
-      width:92%;
-      max-width:560px;
-      padding:45px 35px;
-      border-radius:32px;
 
-      background:rgba(255,255,255,0.10);
-      border:1px solid rgba(255,255,255,0.15);
-
-      backdrop-filter:blur(14px);
-      -webkit-backdrop-filter:blur(14px);
-
-      box-shadow:
-        0 10px 40px rgba(0,0,0,0.35);
+      width:90%;
+      max-width:650px;
 
       text-align:center;
       color:white;
@@ -69,138 +57,155 @@
       display:flex;
       justify-content:center;
       align-items:center;
-      gap:18px;
-      margin-bottom:24px;
+      gap:16px;
+
+      margin-bottom:18px;
     }
 
-    .logo{
-      width:82px;
-      height:82px;
+    .logo-sigi{
+      width:105px;
+      height:105px;
+
       object-fit:contain;
 
       background:white;
-      border-radius:22px;
       padding:10px;
+      border-radius:22px;
 
       box-shadow:
-        0 8px 20px rgba(0,0,0,0.25);
+      0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .logo-kemenkes{
+      width:82px;
+      height:82px;
+
+      object-fit:contain;
+
+      background:white;
+      padding:10px;
+      border-radius:20px;
+
+      box-shadow:
+      0 8px 20px rgba(0,0,0,0.25);
     }
 
     /* TITLE */
     h1{
-      font-size:38px;
+      font-size:58px;
       font-weight:700;
-      letter-spacing:1px;
+
       margin-bottom:10px;
+
+      text-shadow:
+      0 5px 15px rgba(0,0,0,0.4);
     }
 
-    .subtitle{
-      font-size:17px;
-      line-height:1.7;
-      color:rgba(255,255,255,0.88);
-      margin-bottom:38px;
+    p{
+      font-size:24px;
+      line-height:1.6;
+
+      color:rgba(255,255,255,0.92);
+
+      margin-bottom:40px;
     }
 
-    /* CARD */
+    /* LINK */
     a{
       text-decoration:none;
     }
 
+    /* CARD */
     .card{
       width:100%;
-      background:white;
-      color:#1f2937;
 
-      padding:20px 24px;
-      margin-bottom:16px;
+      background:rgba(255,255,255,0.96);
 
-      border-radius:22px;
+      padding:28px 30px;
+      margin-bottom:22px;
+
+      border-radius:32px;
 
       display:flex;
-      justify-content:space-between;
       align-items:center;
+      justify-content:space-between;
 
-      font-size:17px;
-      font-weight:600;
+      color:#1f2937;
 
-      transition:0.3s ease;
+      font-size:30px;
+      font-weight:500;
 
       box-shadow:
-        0 8px 24px rgba(0,0,0,0.15);
+      0 10px 25px rgba(0,0,0,0.28);
+
+      transition:0.3s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-4px);
+      background:white;
     }
 
     .card-left{
       display:flex;
       align-items:center;
-      gap:14px;
+      gap:18px;
     }
 
     .icon{
-      width:48px;
-      height:48px;
-      border-radius:14px;
-
-      display:flex;
-      justify-content:center;
-      align-items:center;
-
-      font-size:22px;
-      background:#eef4ff;
+      font-size:36px;
     }
 
     .arrow{
-      font-size:22px;
-      color:#64748b;
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-4px);
-      box-shadow:
-        0 12px 28px rgba(0,0,0,0.22);
-    }
-
-    .card:hover .arrow{
-      transform:translateX(5px);
+      font-size:34px;
+      color:#6b7280;
     }
 
     /* FOOTER */
     .footer{
-      margin-top:26px;
-      font-size:13px;
-      color:rgba(255,255,255,0.75);
-      letter-spacing:0.4px;
+      margin-top:10px;
+
+      font-size:20px;
+      color:rgba(255,255,255,0.92);
     }
 
     /* MOBILE */
-    @media(max-width:600px){
-
-      .container{
-        padding:35px 22px;
-      }
+    @media(max-width:768px){
 
       h1{
-        font-size:30px;
+        font-size:34px;
       }
 
-      .subtitle{
-        font-size:15px;
+      p{
+        font-size:16px;
       }
 
       .card{
-        padding:18px;
-        font-size:15px;
-      }
-
-      .logo{
-        width:70px;
-        height:70px;
+        font-size:18px;
+        padding:20px;
+        border-radius:22px;
       }
 
       .icon{
-        width:42px;
-        height:42px;
-        font-size:20px;
+        font-size:24px;
+      }
+
+      .arrow{
+        font-size:24px;
+      }
+
+      .logo-sigi{
+        width:80px;
+        height:80px;
+      }
+
+      .logo-kemenkes{
+        width:62px;
+        height:62px;
+      }
+
+      .footer{
+        font-size:14px;
       }
 
     }
@@ -218,17 +223,19 @@
 
     <!-- LOGO -->
     <div class="logo-container">
-      <img src="logo-sigi.png" class="logo">
-      <img src="logo-kemenkes.png" class="logo">
+
+      <img src="logo-sigi.png" class="logo-sigi">
+
+      <img src="logo-kemenkes.png" class="logo-kemenkes">
+
     </div>
 
     <!-- TITLE -->
-    <h1>SIMONTERKES</h1>
+    <h1>Dinas Kesehatan Kab. Sigi</h1>
 
-    <div class="subtitle">
-      Sistem Monitoring & Perencanaan Kesehatan<br>
-      Dinas Kesehatan Kabupaten Sigi
-    </div>
+    <p>
+      Sistem Monitoring & Perencanaan Kesehatan (Simonterkes)
+    </p>
 
     <!-- CARD 1 -->
     <a href="https://docs.google.com/spreadsheets/d/1uAvLcHHPIEE90eYo2Glb-yQfopp88z4euRZwfoH2lP8/edit?gid=1595741466" target="_blank">
@@ -247,29 +254,13 @@
     </a>
 
     <!-- CARD 2 -->
-    <a href="https://1drv.ms/x/c/b5f243fb2c085bb2/IQBXqO9xoQdkQqn5o3y-gtDXAdT_VTWOIojxmpedyKBo6CU?e=czkQZf" target="_blank">
+    <a href="dashboard.html">
 
       <div class="card">
 
         <div class="card-left">
-          <div class="icon">📑</div>
-          <div>Rekap Data SPM</div>
-        </div>
-
-        <div class="arrow">→</div>
-
-      </div>
-
-    </a>
-
-    <!-- CARD 3 -->
-    <a href="https://script.google.com/macros/s/AKfycbzqD-6nsYvFkz5htZ76xPcS8HQ9ULeVLS5bYWhEjgKKTVhyaJcIeGlYzw0zrXId4fbUIA/exec" target="_blank">
-
-      <div class="card">
-
-        <div class="card-left">
-          <div class="icon">🗂️</div>
-          <div>Arsip Dokumen Perencanaan</div>
+          <div class="icon">🌐</div>
+          <div>Dashboard Arsip Data</div>
         </div>
 
         <div class="arrow">→</div>
@@ -280,7 +271,7 @@
 
     <!-- FOOTER -->
     <div class="footer">
-      © 2026 Dinas Kesehatan Kabupaten Sigi
+      © Dinas Kesehatan Kabupaten Sigi
     </div>
 
   </div>
